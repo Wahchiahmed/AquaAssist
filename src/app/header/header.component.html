@@ -1,0 +1,25 @@
+<header>
+    <div class="logo">
+        <a routerLink="/"><img src="././assets/img/logo.jpg" alt="AquaAssist Logo"></a>
+    </div>
+    <nav>
+      <ul class="menu" [ngClass]="{'active': menuOpen}">
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/about">About</a></li>
+        <li><a routerLink="/services">Services</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="register">
+        <a routerLink="/login">
+            <button mat-raised-button >Login</button>
+        </a>
+        <a routerLink="/signup">
+            <button mat-raised-button color="primary">Sign Up</button>
+        </a>
+    </div>
+</header>
+<app-hero></app-hero>
+<app-features></app-features>
+<app-how-it-work></app-how-it-work>
+<app-testimonials></app-testimonials>

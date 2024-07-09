@@ -1,0 +1,128 @@
+.how-it-works {
+    padding: 60px 100px;
+    text-align: center;
+  }
+  
+  .how-it-works h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .user-type-selector {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .user-type-selector button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 10px;
+    color: aliceblue;
+    transition: color 0.3s, border-bottom 0.3s;
+  }
+  
+  .user-type-selector button.active {
+    color: #3f51b5;
+    border-bottom: 2px solid #3f51b5;
+  }
+  .container-userSelector{
+    background-color: red;
+    height: 200px;
+    width: 450px;
+  }
+  .container-userSelector h2 {
+    padding-top:20px;
+    color: beige;
+  }
+  .step-icon {
+    font-size: 1rem;
+    color: #3f51b5;
+    margin-bottom: 20px;
+  }
+  .container{
+    position: absolute;
+    width: 50%;
+    left: 35%;
+    top: 190%;
+    border-radius: 5%;
+  }
+  .steps-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 20%;
+    min-width: 200px;
+  }
+  
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .step-icon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .step-content h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .step-content p {
+    font-size: 14px;
+    color: #666;
+  }
+  i{
+    color: #3f51b5;
+  }
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+  
+    .step {
+      flex: 1 1 100%;
+    }
+  
+    .how-it-works h2 {
+      font-size: 2rem;
+    }
+  
+    .user-type-selector button {
+      font-size: 1rem;
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .how-it-works {
+      padding: 40px 20px;
+    }
+  
+    .container-userSelector {
+      width: 100%;
+    }
+  }
+  

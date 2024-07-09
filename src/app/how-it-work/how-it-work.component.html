@@ -1,0 +1,20 @@
+<section class="how-it-works">
+  <div class="container-userSelector">
+    <h2>How it works <br> I am a ...</h2>
+    <div class="user-type-selector">
+      <button (click)="setUserType('boatOwner')" [class.active]="userType === 'boatOwner'">Boat Owner</button>
+      <button (click)="setUserType('serviceProvider')" [class.active]="userType === 'serviceProvider'">Service Provider</button>
+    </div>
+  </div>
+    <div [@fadeInOut] class="steps-container container">
+      <div class="step" *ngFor="let step of steps">
+        <div class="icon-container">
+          <i class="{{step.icon}}"></i>
+        </div>
+        <div class="step-content">
+          <h3>{{step.title}}</h3>
+          <p>{{step.description}}</p>
+        </div>
+      </div>
+    </div>
+</section>
